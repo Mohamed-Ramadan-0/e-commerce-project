@@ -1,0 +1,60 @@
+.card{
+    border: 0;
+
+}
+.card>img{
+    transform: scale(1);
+}
+
+.card:hover >img {
+    transform: scale(1.2)  ;
+    transition: all .5s  ease;
+}
+
+.container1{
+    overflow: hidden;
+    position: relative;
+}
+.h-btn-card{
+    position: absolute;
+    z-index: 3;
+    top: 9%;
+    left: -30%;
+}
+.container1:hover > .h-btn-card{
+    left: 0;
+    transition: all .5s ease;
+}
+.icon-container{ 
+    background-color: rgb(255, 255, 255);
+    cursor: pointer;
+    border: 0px solid ;
+    width: 40px;
+    height: 40px;
+}
+.icon-container:hover{
+
+    background-color: rgb(0, 0, 0);
+
+}
+
+.text-color-w{
+    color: rgb(0, 0, 0) !important;
+}
+.checked{
+    color: orange;
+}
+
+.icon-container:hover > .text-color-w{
+    color: rgb(255, 255, 255) !important;
+}
+
+.card-brand{
+    text-decoration: none;
+    color: black;
+}
+.card-brand:hover{
+    text-decoration: underline;
+    color: red;
+    transition: all .2s ease;
+}

@@ -1,5 +1,7 @@
 import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
+
+
 declare var $:any
 @Component({
   selector: 'app-slider',
@@ -7,6 +9,10 @@ declare var $:any
   styleUrls: ['./slider.component.css']
 })
 export class SliderComponent {
+  ngOnInit(): void {
+  }
+
+  
   customOptions: OwlOptions = {
     autoplay: true,
     autoplaySpeed:700,
@@ -32,16 +38,33 @@ export class SliderComponent {
         items: 3
       },
       940: {
-        items: 5
+        items: 4
       }
     },
     nav: false
   }
-/* AddCart(){
-  $(".card").addClass("d-none")
-} */
 
-/* jquery code
- */
+  /* tooltipanimation(){
+    console.log("gfshdgjmfhnb");
+    
+    $(".icon-container").hover(function(){
+      $(".tooltipN").css({"left": "140%", "opacity":"1" , "transition":".5s all ease-in-out"});
+      }, function(){
+      $(".tooltipN").css({"left": "50%", "opacity":"0" , "transition":".5s all ease-in-out"});
+    });
+  } */
+  tooltipanimationin(event:any){
+    
+    $(event.target.children[1]).css({"left": "140%", "opacity":"1" , "transition":".5s all ease-in-out"});
+    
+      
+  }
+
+  tooltipanimationout(event:any){
+    $(event.target.children[1]).css({"left": "50%", "opacity":"0" , "transition":".5s all ease-in-out"});
+    
+      
+  }
+
 }
 

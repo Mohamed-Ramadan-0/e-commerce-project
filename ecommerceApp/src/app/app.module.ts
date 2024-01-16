@@ -26,6 +26,10 @@ import { SliderComponent } from './slider/slider.component';
 import { CUSTOM_ELEMENTS_SCHEMA,} from '@angular/core';
 import { register } from 'swiper/element/bundle';
 register();
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatButtonModule} from '@angular/material/button';
+
 
 
 
@@ -58,7 +62,11 @@ register();
     BrowserAnimationsModule,
     RouterModule,
     CarouselModule,
-    AppRoutingModule
+    AppRoutingModule,
+    MatTooltipModule,
+    MatSlideToggleModule,
+    MatButtonModule
+
   ],
   providers: [],
   bootstrap: [AppComponent],

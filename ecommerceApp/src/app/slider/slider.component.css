@@ -1,60 +1,110 @@
-.card{
+.card {
     border: 0;
 
 }
-.card>img{
+
+.card>img {
     transform: scale(1);
 }
 
-.card:hover >img {
-    transform: scale(1.2)  ;
-    transition: all .5s  ease;
+.card:hover>img {
+    transform: scale(1.2);
+    transition: all .5s ease;
 }
 
-.container1{
+.container1 {
     overflow: hidden;
     position: relative;
 }
-.h-btn-card{
+
+.h-btn-card {
     position: absolute;
     z-index: 3;
     top: 9%;
-    left: -30%;
+    left: -50%;
 }
-.container1:hover > .h-btn-card{
+
+.container1:hover>.h-btn-card {
     left: 0;
     transition: all .5s ease;
 }
-.icon-container{ 
+
+.icon-container {
     background-color: rgb(255, 255, 255);
     cursor: pointer;
-    border: 0px solid ;
+    border: 0px solid;
     width: 40px;
     height: 40px;
+    position: relative;
 }
-.icon-container:hover{
+
+.tooltipNarrow {
+    position: absolute;
+    right: 98%;
+    top: calc(50% - 8px);
+    width: 0;
+    height: 0;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-right: 7px solid rgb(0, 0, 0);
+
+}
+.tooltipWidth1{
+    width: 100px;
+}
+.tooltipWidth2{
+    width: 90px;
+}
+.tooltipWidth3{
+    width: 110px;
+}
+.tooltipWidth4{
+    width: 120px;
+}
+
+.tooltipN {
+    position: absolute;
+    height: 25px;
+    background-color: black;
+    left: 50%;
+    opacity: 0;
+
+}
+
+.tooltipN>p {
+    margin-top: 2px;
+}
+
+.icon-container:hover {
 
     background-color: rgb(0, 0, 0);
 
 }
-
-.text-color-w{
+/* .icon-container:hover .tooltipN{
+    left: 140%;
+    opacity: 1;
+    transition: .5s all ease-in-out;
+} */
+.text-color-w {
     color: rgb(0, 0, 0) !important;
 }
-.checked{
+
+.checked {
     color: orange;
 }
 
-.icon-container:hover > .text-color-w{
+.icon-container:hover>.text-color-w {
     color: rgb(255, 255, 255) !important;
 }
 
-.card-brand{
+.card-brand {
     text-decoration: none;
     color: black;
 }
-.card-brand:hover{
+
+.card-brand:hover {
     text-decoration: underline;
     color: red;
     transition: all .2s ease;
 }
+
